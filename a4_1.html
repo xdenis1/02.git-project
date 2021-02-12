@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A4 exercice</title>
+	<link rel="stylesheet" type="text/css" href="css/a4_1.css">
+</head>
+<body>
+<button class="popup-but">Войти</button>
+            	<div class="popup"></div>
+
+<script type="text/javascript">
+	let button = document.querySelector('.popup-but')
+	button.addEventListener('mouseover', showPopup);
+	button.addEventListener('mouseout', hidePopup);
+
+	function showPopup() {
+		document.querySelector('.popup').classList.add('visible');
+		console.log('showPopup Ca marche!');
+	}
+
+	function hidePopup(){
+		document.querySelector('.popup').classList.remove('visible')
+	}
+
+</script>
+</body>
+</html>
