@@ -3,6 +3,7 @@
 <head>
 	<title>A4 exercice</title>
 	<link rel="stylesheet" type="text/css" href="css/a4.css">
+	<script src="js/a4.js"></script>
 </head>
 <body>
 <button class="popup-but">Entrer</button>
@@ -13,10 +14,46 @@
 	button.addEventListener('click', showPopup);
 
 	function showPopup() {
-		document.querySelector('.popup').classList.toggle('visible');
+		document.querySelector('.popup').classList.toggle('visible')
 		console.log('showPopup Ca marche!');
 	}
 
+
+
 </script>
+	<form  class="shop-form" action="">
+	<fieldset>
+	<legend>Type de vélo</legend>
+	<input type="radio" name="typeVelo" id="idMetallique" value="valueMetallique">
+	<label for="idMetallique">Metalliquelabel</label>
+	<input type="radio" name="typeVelo" id="idenbois" value="valueenbois">
+	<label for="idenbois">enboislabel</label>
+	</fieldset>
+
+<fieldset>
+	<legend>Options de vélo</legend>
+	<input type="checkbox" name="optionsVelo" id="idOption1" value="chaine renforcée">
+	<label for="idOption1">Chaine renforcée</label>
+	<input type="checkbox" name="optionsVelo" id="idOption2" value="volant haut">
+	<label for="idOption2">Volant haut</label>
+	</fieldset>
+	
+	</form>
+<button class="buttonVelo">Trouver</button>
+<div class="divSuggest">
+<h1>Achète plutot le truc métallic</h1>
+</div>
+
+<script type="text/javascript">
+	let displayVar = document.querySelector('.buttonVelo')
+displayVar.addEventListener('click', eventViewver);
+
+	function eventViewver() {
+	document.querySelector('.divSuggest').classList.toggle('visibility')
+	console.log('function executed');
+}
+
+</script>
+
 </body>
 </html>

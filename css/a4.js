@@ -1,0 +1,1 @@
+let displayVar = document.querrySelector(.'buttonVelo');
